@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bin2Dec</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-logo">BTD - BinToDec</h1>
+        <nav class="header-navbar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="container-btd">
+            <input type="number" class="btd-input" id="bin-input" pattern="[0-1]" min="0" max="1"
+                onkeyup="validaDado()">
+            <div class="check-group">
+                <label for="check">maximo 8?</label>
+                <input type="checkbox" id="check" name="check" checked>
+            </div>
+            <button class="btd-button" onclick="validaDado()">Converter</button>
+            <div class="btd-input-result" id="result">
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
